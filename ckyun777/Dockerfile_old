@@ -1,0 +1,12 @@
+# syntax=docker/dockerfile:experimental
+FROM ubuntu:18.04
+MAINTAINER Yunkyu Choi <ckyun777@gmail.com>
+RUN mkdir /dockertest_mkdir
+RUN echo "Hello, Docker!"
+ADD test.txt /dockertest_mkdir/
+RUN apt-get update
+RUN apt-get install -y git
+RUN echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
+RUN --mount=type=ssh git clone git@github.com:DockerServiceTest01 && cd DockerServiceTest01 && touch hello && git add hello && git commit -s -m "Push a file from inside of a container" && git push
+WORKDIR /tmp
+CMD ["echo hello world"]

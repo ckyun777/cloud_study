@@ -18,3 +18,12 @@ https://m.blog.naver.com/PostView.nhn?blogId=specialist0&logNo=221232983680&prox
 https://blog.djjproject.com/134
 
 
+* Dockerfile
+** python socket : https://realpython.com/python-sockets/
+** Dockerfile 만들기 : https://blog.naver.com/PostView.nhn?blogId=alice_k106&logNo=220646382977&parentCategoryNo=7&categoryNo=&viewDate=&isShowPopularPosts=true&from=search
+
+
+
+
+
+
